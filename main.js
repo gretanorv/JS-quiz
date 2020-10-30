@@ -40,14 +40,6 @@ startGame.addEventListener("click", (e) => {
   loading.classList.remove("hide");
   //fetch data
   fetchData(userData.questions, userData.category);
-
-  setTimeout(() => {
-    //hide load
-    loading.classList.add("hide");
-
-    //show questions
-    questionsPage.classList.remove("hide");
-  }, 3000);
 });
 
 //fetch data function
@@ -64,6 +56,10 @@ const fetchData = (questions, category) => {
 
       //game logic
       game(receivedQuestions, i);
+      //hide load
+      loading.classList.add("hide");
+      //show questions
+      questionsPage.classList.remove("hide");
     })
     .catch((err) => {
       console.log(err);
