@@ -37,17 +37,17 @@ startGame.addEventListener("click", (e) => {
   //hide main page
   mainPage.classList.add("hide");
   //show load
-  loading.classList.remove("hidden");
-  //fetch data
-  fetchData(userData.questions, userData.category);
+  loading.classList.remove("hide");
+  // //fetch data
+  // fetchData(userData.questions, userData.category);
 
-  setTimeout(() => {
-    //hide load
-    loading.classList.add("hidden");
+  // setTimeout(() => {
+  //   //hide load
+  //   loading.classList.add("hide");
 
-    //show questions
-    questionsPage.classList.remove("hidden");
-  }, 3000);
+  //   //show questions
+  //   questionsPage.classList.remove("hidden");
+  // }, 3000);
 });
 
 //fetch data function
