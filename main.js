@@ -38,16 +38,16 @@ startGame.addEventListener("click", (e) => {
   mainPage.classList.add("hide");
   //show load
   loading.classList.remove("hide");
-  // //fetch data
-  // fetchData(userData.questions, userData.category);
+  //fetch data
+  fetchData(userData.questions, userData.category);
 
-  // setTimeout(() => {
-  //   //hide load
-  //   loading.classList.add("hide");
+  setTimeout(() => {
+    //hide load
+    loading.classList.add("hide");
 
-  //   //show questions
-  //   questionsPage.classList.remove("hidden");
-  // }, 3000);
+    //show questions
+    questionsPage.classList.remove("hidden");
+  }, 3000);
 });
 
 //fetch data function
