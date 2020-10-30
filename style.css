@@ -90,12 +90,6 @@ body {
   background-color: #544aff;
 }
 
-.questions,
-.pabaiga {
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
 .questions__text,
 .pabaiga__text {
   text-align: center;
@@ -154,8 +148,6 @@ body {
   font-weight: 600;
   padding: 10px 20px;
   margin-top: 50px;
-  -webkit-transition: 0.3s all ease;
-  transition: 0.3s all ease;
 }
 
 .pabaiga__play-again:hover, .pabaiga__play-again:focus {

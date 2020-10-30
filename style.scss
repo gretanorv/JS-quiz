@@ -58,8 +58,6 @@ body {
 
 .questions,
 .pabaiga {
-    transition: all 1s ease;
-
     &__text {
         text-align: center;
         color: #fff;
@@ -119,7 +117,6 @@ body {
         font-weight: 600;
         padding: 10px 20px;
         margin-top: 50px;
-        transition: 0.3s all ease;
 
         &:hover,
         &:focus {
