@@ -46,7 +46,7 @@ startGame.addEventListener("click", (e) => {
     loading.classList.add("hide");
 
     //show questions
-    questionsPage.classList.remove("hidden");
+    questionsPage.classList.remove("hide");
   }, 3000);
 });
 
@@ -90,15 +90,15 @@ const game = (receivedQuestions, i) => {
 
       if (i === 9) {
         //hide questions page
-        questionsPage.classList.add("hidden");
+        questionsPage.classList.add("hide");
 
         if (userData.correct >= 6) {
           //show winner page
-          pabaigaWinnerPage.classList.remove("hidden");
+          pabaigaWinnerPage.classList.remove("hide");
           pointsWin.innerText = `${userData.correct}/${userData.questions} correct answers`;
         } else {
           //show looser page
-          pabaigaLooserPage.classList.remove("hidden");
+          pabaigaLooserPage.classList.remove("hide");
           pointsLost.innerText = `${userData.correct}/${userData.questions} correct answers`;
         }
       } else {

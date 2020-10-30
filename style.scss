@@ -98,11 +98,16 @@ body {
 .pabaiga {
     &__text {
         font-size: 4rem;
+
+        @media (max-width: 800px) {
+            font-size: 3rem;
+        }
     }
 
     &__points {
         color: #6c63ff;
         font-size: 2rem;
+        text-align: center;
     }
 
     &__play-again {
@@ -125,11 +130,6 @@ body {
 
 .hide {
     display: none !important;
-}
-
-.hidden {
-    opacity: 0;
-    z-index: -1;
 }
 
 .load {
