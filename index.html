@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="main">
+        <img src="./undraw_Questions_re_1fy7.svg" alt="" class="main__img">
+        <div class="main__difficulty">
+            <label for="difficulty" class="main__difficulty-label">Choose your difficulty:</label>
+            <select name="" id="difficulty" class="main__difficulty-input">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Difficult</option>
+            </select>
+        </div>
+        <div class="main__category">
+            <label for="category" class="main__category-label">Choose your category:</label>
+            <select name="" id="category" class="main__category-input">
+                <option value="9">General Knowledge</option>
+                <option value="15">Video Games</option>
+                <option value="22">Geography</option>
+                <option value="27">Animals</option>
+                <option value="11">Movies</option>
+            </select>
+        </div>
+        <button class="main__start" id="startGame">Start game</button>
+    </div>
+
+    <div class="load hidden">
+        <div class="animation-container">
+            <div class="lightning-container">
+                <div class="lightning white"></div>
+                <div class="lightning red"></div>
+            </div>
+            <div class="boom-container">
+                <div class="shape circle big white"></div>
+                <div class="shape circle white"></div>
+                <div class="shape triangle big yellow"></div>
+                <div class="shape disc white"></div>
+                <div class="shape triangle blue"></div>
+            </div>
+            <div class="boom-container second">
+                <div class="shape circle big white"></div>
+                <div class="shape circle white"></div>
+                <div class="shape disc white"></div>
+                <div class="shape triangle blue"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="questions hidden">
+        <img src="./undraw_select_option_y75i.svg" alt="" class="questions__img">
+        <h2 id="question" class="questions__text"></h2>
+        <div class="questions__controls">
+            <button id="yes" data-value="True" class="questions__controls-btn questions__controls-btn--yes">Yes</button>
+            <button id="no" data-value="False" class="questions__controls-btn questions__controls-btn--no">No</button>
+        </div>
+    </div>
+
+    <div class="pabaiga pabaiga--winner hidden">
+        <img src="./undraw_winners_ao2o.svg" alt="" class="pabaiga__img">
+        <h2 class="pabaiga__text">CONGRATS!!</h2>
+        <span id="pointsWin" class="pabaiga__points"></span>
+        <button onClick="window.location.reload();" class="pabaiga__play-again">Play again</button>
+    </div>
+
+    <div class="pabaiga pabaiga--looser hidden">
+        <img src="./undraw_feeling_blue_4b7q.svg" alt="" class="pabaiga__img">
+        <h2 class="pabaiga__text">Sorry, you lost...</h2>
+        <span id="pointsLost" class="pabaiga__points"></span>
+        <button onClick="window.location.reload();" class="pabaiga__play-again">Play again</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
